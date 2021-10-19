@@ -1,4 +1,4 @@
-(function() {
+(function () {
 
 	"use strict";
 
@@ -8,35 +8,35 @@
 	});
 
 
-	var slider = function(){
+	var slider = function () {
 
 		var carouselSlider = document.querySelectorAll('.carousel-testimony');
 
-		if ( carouselSlider.length > 0 ) {
+		if (carouselSlider.length > 0) {
 
 			var testimonySlider = tns({
 				container: '.carousel-testimony',
 				items: 1,
 				mode: 'carousel',
 				autoplay: true,
-			  animateIn: 'tns-fadeIn',
-		    animateOut: 'tns-fadeOut',
+				animateIn: 'tns-fadeIn',
+				animateOut: 'tns-fadeOut',
 				speed: 700,
 				nav: false,
 				gutter: 20,
 				controls: true,
-				controlsText: ["<span class='ion-ios-arrow-round-back'></span>","<span class='ion-ios-arrow-round-forward'></span>"],
+				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
 				autoplayButtonOutput: false,
-				responsive:{
-					0:{
+				responsive: {
+					0: {
 						items: 1,
 						gutter: 0
 					},
-					600:{
+					600: {
 						items: 1,
 						gutter: 20
 					},
-					1000:{
+					1000: {
 						items: 1,
 						gutter: 20
 					}
@@ -47,15 +47,15 @@
 
 	}
 	slider();
-	
 
 
-	var counter = function() {
+
+	var counter = function () {
 		function countUp(elem) {
 			var current = elem.innerHTML;
 
 
-			var timeIntervalBeforeIncrement = 2000/elem.getAttribute("data-count")
+			var timeIntervalBeforeIncrement = 2000 / elem.getAttribute("data-count")
 
 
 			var interval = setInterval(increase, timeIntervalBeforeIncrement);
@@ -92,16 +92,14 @@
 			var element = elements[i];
 			var positionFromTop = elements[i].getBoundingClientRect().top;
 			if (positionFromTop - windowHeight <= 0) {
-				if( !element.classList.contains('viewed') ) {
+				if (!element.classList.contains('viewed')) {
 					element.classList.add('viewed');
-					counter();	
+					counter();
 				} else {
-					if ( element.classList.contains('viewed') ) {
+					if (element.classList.contains('viewed')) {
 
 					}
 				}
-				// console.log('igo');
-
 			}
 		}
 	}
@@ -113,29 +111,29 @@
 
 
 	const lightbox = GLightbox({
-	  touchNavigation: true,
-	  loop: true,
-	  autoplayVideos: true
+		touchNavigation: true,
+		loop: true,
+		autoplayVideos: true
 	});
 
 
 	//SCROLL
 	const links = document.querySelectorAll(".btn-custom");
 
-		for (const link of links) {
-		  link.addEventListener("click", clickHandler);
-		}
+	for (const link of links) {
+		link.addEventListener("click", clickHandler);
+	}
 
-		function clickHandler(e) {
-		  e.preventDefault();
-		  const href = this.getAttribute("href");
-		  const offsetTop = document.querySelector(href).offsetTop;
+	function clickHandler(e) {
+		e.preventDefault();
+		const href = this.getAttribute("href");
+		const offsetTop = document.querySelector(href).offsetTop;
 
-		  scroll({
-		    top: offsetTop,
-		    behavior: "smooth"
-		  });
-		}
+		scroll({
+			top: offsetTop,
+			behavior: "smooth"
+		});
+	}
 
 })()
 
