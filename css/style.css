@@ -3326,7 +3326,7 @@ textarea.form-control-lg {
 .navbar {
   top: -30px;
   width: 100%;
-  position: fixed;
+  position: fixed!important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3337,8 +3337,7 @@ textarea.form-control-lg {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  background: #212529; }
+  justify-content: space-between; }
   .navbar > .container,
   .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
     display: -webkit-box;
@@ -3376,7 +3375,7 @@ textarea.form-control-lg {
     padding-right: 0;
     padding-left: 0; }
   .navbar-nav .dropdown-menu {
-    position: static; }
+    position: fixed; }
 
 .navbar-text {
   padding-top: 0.5rem;
@@ -9238,6 +9237,17 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+
+.tns-controls {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  max-height: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .testimony-section {
   position: relative;
