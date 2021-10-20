@@ -77,7 +77,6 @@
 		}
 	}
 
-
 	var elements;
 	var windowHeight;
 
@@ -116,7 +115,6 @@
 		autoplayVideos: true
 	});
 
-
 	//SCROLL
 	const links = document.querySelectorAll(".btn-custom");
 
@@ -125,7 +123,6 @@
 	}
 
 	function clickHandler(e) {
-		e.preventDefault();
 		const href = this.getAttribute("href");
 		const offsetTop = document.querySelector(href).offsetTop;
 

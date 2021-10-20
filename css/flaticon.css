@@ -31,7 +31,7 @@
 }
 
 .flaticon-layers:before { content: "\f100"; }
-.flaticon-vector-art:before { content: "\f101"; }
+.flaticon-vector-art:before { content: url("https://img.icons8.com/external-wanicon-lineal-wanicon/64/ffffff/external-blockchain-nft-wanicon-lineal-wanicon.png"); }
 .flaticon-monitoring:before { content: "\f102"; }
 .flaticon-branding:before { content: "\f103"; }
 .flaticon-web:before { content: "\f104"; }
