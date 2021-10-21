@@ -1,3 +1,5 @@
+import { tns } from './src/tiny-slider.js';
+
 (function () {
 
 	"use strict";
@@ -10,13 +12,13 @@
 
 	var slider = function () {
 
-		let carouselSliderOne = document.querySelectorAll('.carousel-testimony-one'); 
-		let carouselSliderTwo = document.querySelectorAll('.carousel-testimony-two'); 
-		let carouselSliderThree = document.querySelectorAll('.carousel-testimony-three'); 
-		let carouselSliderFour = document.querySelectorAll('.carousel-testimony-four'); 
-		let carouselSliderFive = document.querySelectorAll('.carousel-testimony-five'); 
-		let carouselSliderSix = document.querySelectorAll('.carousel-testimony-six'); 
-		let carouselSliderRes = document.querySelectorAll('.carousel-testimony-res'); 
+		let carouselSliderOne = document.querySelectorAll('.carousel-testimony-one');
+		let carouselSliderTwo = document.querySelectorAll('.carousel-testimony-two');
+		let carouselSliderThree = document.querySelectorAll('.carousel-testimony-three');
+		let carouselSliderFour = document.querySelectorAll('.carousel-testimony-four');
+		let carouselSliderFive = document.querySelectorAll('.carousel-testimony-five');
+		let carouselSliderSix = document.querySelectorAll('.carousel-testimony-six');
+		let carouselSliderRes = document.querySelectorAll('.carousel-testimony-res');
 
 		if (carouselSliderOne.length > 0) {
 
