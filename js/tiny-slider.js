@@ -1122,8 +1122,8 @@ var tns = function(options) {
         classInner = 'tns-inner',
         hasGutter = hasOption('gutter');
 
-    outerWrapper.className = classOuter;
-    innerWrapper.className = classInner;
+    outerWrapper.className = classOuter + slideId;
+    innerWrapper.className = classInner + slideId;
     outerWrapper.id = slideId + '-ow';
     innerWrapper.id = slideId + '-iw';
 
@@ -1525,9 +1525,9 @@ var tns = function(options) {
     // == controlsInit ==
     if (hasControls) {
       if (!controlsContainer && (!prevButton || !nextButton)) {
-        outerWrapper.insertAdjacentHTML(getInsertPosition(options.controlsPosition), '<div class="tns-controls" aria-label="Carousel Navigation" tabindex="0"><button type="button" data-controls="prev" tabindex="-1" aria-controls="' + slideId +'">' + controlsText[0] + '</button><button type="button" data-controls="next" tabindex="-1" aria-controls="' + slideId +'">' + controlsText[1] + '</button></div>');
+        outerWrapper.insertAdjacentHTML(getInsertPosition(options.controlsPosition), '<div class="tns-controls'+ slideId +'" aria-label="Carousel Navigation" tabindex="0"><button type="button" data-controls="prev" tabindex="-1" aria-controls="' + slideId +'">' + controlsText[0] + '</button><button type="button" data-controls="next" tabindex="-1" aria-controls="' + slideId +'">' + controlsText[1] + '</button></div>');
 
-        controlsContainer = outerWrapper.querySelector('.tns-controls');
+        controlsContainer = outerWrapper.querySelector('.tns-controls'+ slideId +'');
       }
 
       if (!prevButton || !nextButton) {

@@ -10,12 +10,216 @@
 
 	var slider = function () {
 
-		var carouselSlider = document.querySelectorAll('.carousel-testimony');
+		let carouselSliderOne = document.querySelectorAll('.carousel-testimony-one'); 
+		let carouselSliderTwo = document.querySelectorAll('.carousel-testimony-two'); 
+		let carouselSliderThree = document.querySelectorAll('.carousel-testimony-three'); 
+		let carouselSliderFour = document.querySelectorAll('.carousel-testimony-four'); 
+		let carouselSliderFive = document.querySelectorAll('.carousel-testimony-five'); 
+		let carouselSliderSix = document.querySelectorAll('.carousel-testimony-six'); 
+		let carouselSliderRes = document.querySelectorAll('.carousel-testimony-res'); 
 
-		if (carouselSlider.length > 0) {
+		if (carouselSliderOne.length > 0) {
 
 			var testimonySlider = tns({
-				container: '.carousel-testimony',
+				container: '.carousel-testimony-one',
+				items: 1,
+				mode: 'carousel',
+				autoplay: true,
+				animateIn: 'tns-fadeIn',
+				animateOut: 'tns-fadeOut',
+				speed: 700,
+				nav: false,
+				gutter: 20,
+				controls: true,
+				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1,
+						gutter: 0
+					},
+					600: {
+						items: 1,
+						gutter: 20
+					},
+					1000: {
+						items: 1,
+						gutter: 20
+					}
+				}
+			});
+
+		}
+
+		if (carouselSliderTwo.length > 0) {
+
+			var testimonySlider = tns({
+				container: '.carousel-testimony-two',
+				items: 1,
+				mode: 'carousel',
+				autoplay: true,
+				animateIn: 'tns-fadeIn',
+				animateOut: 'tns-fadeOut',
+				speed: 700,
+				nav: false,
+				gutter: 20,
+				controls: true,
+				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1,
+						gutter: 0
+					},
+					600: {
+						items: 1,
+						gutter: 20
+					},
+					1000: {
+						items: 1,
+						gutter: 20
+					}
+				}
+			});
+
+		}
+
+		if (carouselSliderThree.length > 0) {
+
+			var testimonySlider = tns({
+				container: '.carousel-testimony-three',
+				items: 1,
+				mode: 'carousel',
+				autoplay: true,
+				animateIn: 'tns-fadeIn',
+				animateOut: 'tns-fadeOut',
+				speed: 700,
+				nav: false,
+				gutter: 20,
+				controls: true,
+				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1,
+						gutter: 0
+					},
+					600: {
+						items: 1,
+						gutter: 20
+					},
+					1000: {
+						items: 1,
+						gutter: 20
+					}
+				}
+			});
+
+		}
+
+		if (carouselSliderFour.length > 0) {
+
+			var testimonySlider = tns({
+				container: '.carousel-testimony-four',
+				items: 1,
+				mode: 'carousel',
+				autoplay: true,
+				animateIn: 'tns-fadeIn',
+				animateOut: 'tns-fadeOut',
+				speed: 700,
+				nav: false,
+				gutter: 20,
+				controls: true,
+				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1,
+						gutter: 0
+					},
+					600: {
+						items: 1,
+						gutter: 20
+					},
+					1000: {
+						items: 1,
+						gutter: 20
+					}
+				}
+			});
+
+		}
+
+		if (carouselSliderFive.length > 0) {
+
+			var testimonySlider = tns({
+				container: '.carousel-testimony-five',
+				items: 1,
+				mode: 'carousel',
+				autoplay: true,
+				animateIn: 'tns-fadeIn',
+				animateOut: 'tns-fadeOut',
+				speed: 700,
+				nav: false,
+				gutter: 20,
+				controls: true,
+				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1,
+						gutter: 0
+					},
+					600: {
+						items: 1,
+						gutter: 20
+					},
+					1000: {
+						items: 1,
+						gutter: 20
+					}
+				}
+			});
+
+		}
+
+		if (carouselSliderSix.length > 0) {
+
+			var testimonySlider = tns({
+				container: '.carousel-testimony-six',
+				items: 1,
+				mode: 'carousel',
+				autoplay: true,
+				animateIn: 'tns-fadeIn',
+				animateOut: 'tns-fadeOut',
+				speed: 700,
+				nav: false,
+				gutter: 20,
+				controls: true,
+				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1,
+						gutter: 0
+					},
+					600: {
+						items: 1,
+						gutter: 20
+					},
+					1000: {
+						items: 1,
+						gutter: 20
+					}
+				}
+			});
+
+		}
+
+		if (carouselSliderRes.length > 0) {
+
+			var testimonySlider = tns({
+				container: '.carousel-testimony-res',
 				items: 1,
 				mode: 'carousel',
 				autoplay: true,

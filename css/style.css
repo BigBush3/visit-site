@@ -3253,6 +3253,10 @@ textarea.form-control-lg {
   margin-bottom: 0;
   list-style: none; }
 
+.tns-inner {
+  display: block;
+}
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -3376,6 +3380,10 @@ textarea.form-control-lg {
     padding-left: 0; }
   .navbar-nav .dropdown-menu {
     position: fixed; }
+
+.nav-item:focus {
+  color: #fff;
+}    
 
 .navbar-text {
   padding-top: 0.5rem;
@@ -9238,7 +9246,62 @@ hr {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.tns-controls {
+.tns-controlstns1 {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  max-height: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tns-controlstns2 {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  max-height: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tns-controlstns3 {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  max-height: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tns-controlstns4 {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  max-height: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tns-controlstns5 {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  max-height: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tns-controlstns6 {
   position: absolute;
   z-index: 1;
   height: 100%;
