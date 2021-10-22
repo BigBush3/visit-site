@@ -1,5 +1,3 @@
-import { tns } from './src/tiny-slider.js';
-
 (function () {
 
 	"use strict";
