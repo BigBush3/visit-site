@@ -13,12 +13,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/tiny-slider.css">
-  <link rel="stylesheet" href="css/glightbox.min.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/flaticon.css">
+  <link rel="stylesheet" href="../css/tiny-slider.css">
+  <link rel="stylesheet" href="../css/glightbox.min.css">
+  <link rel="stylesheet" href="../css/aos.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -31,13 +31,20 @@
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-bars"></span> Menu
+        <span class="fa fa-bars"></span> Меню
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="work.html">Работы</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">Обо мне</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Связаться</a></li>
+          <li class="nav-item">
+            <select class="nav-link nav-select" id="lang">
+              <option disabled>Выберите язык</option>
+              <option value="/en/">Английский</option>
+              <option value="/ru/" selected>Русский</option>
+            </select>
+          </li>
         </ul>
       </div>
     </div>
@@ -48,8 +55,8 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-6 heading-section text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
-          <h2 class="mb-4">About us</h2>
-          <p><span class="subheading mr-2"><a href="index.html">Home</a></span> <span class="subheading">About us</span>
+          <h2 class="mb-4">Обо мне</h2>
+          <p><span class="subheading mr-2"><a href="index.html">Главная</a></span> <span class="subheading">Обо мне</span>
           </p>
         </div>
       </div>
@@ -63,24 +70,24 @@
           <div class="row g-xl-5">
             <div class="col-md-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"
               data-aos-duration="1000">
-              <div class="img w-100" style="background-image: url(images/about.jpg);"></div>
+              <div class="img w-100" style="background-image: url(../images/about.jpg);"></div>
             </div>
             <div class="col-md-7 py-5 heading-section" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               <div class="py-md-5">
-                <span class="subheading">Andrey Platonov</span>
-                <h2 class="mb-4">We Are Able to Provide Your Digital Needs</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                  the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                  language ocean.</p>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="subheading">Андрей Платонов</span>
+                <h2 class="mb-4">Я могу удовлетворить ваши потребности в цифровых технологиях</h2>
+                <p>Далеко-далеко, за миром гор, далеко от стран Вокалия и Консонантия, живут
+                  слепые тексты. По отдельности они живут в Закладки прямо на берегу Семантики, большой
+                  языковой океан.</p>
+                <p>Рядом с ними протекает небольшая речка Дуден, снабжающая его необходимыми регелиалами. Это
+                  райская страна, в которой жареные части предложений летят вам в рот.</p>
                 <div class="row py-5 g-2">
                   <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
                     <div class="counter-wrap" data-aos="fade-up" data-aos-duration="1000">
                       <div class="text">
                         <span class="d-block number gradient-text"><span id="count1" class="counter"
                             data-count="3">0</span>+</span>
-                        <p>Years of Experienced</p>
+                        <p>Лет опыта</p>
                       </div>
                     </div>
                   </div>
@@ -89,7 +96,7 @@
                       <div class="text">
                         <span class="d-block number gradient-text"><span id="count2" class="counter"
                             data-count="10">0</span></span>
-                        <p>Finished Project</p>
+                        <p>Завершенных проектов</p>
                       </div>
                     </div>
                   </div>
@@ -107,7 +114,7 @@
                       <div class="text">
                         <span class="d-block number gradient-text"><span id="count2" class="counter"
                             data-count="10">0</span></span>
-                        <p>Satified Clients</p>
+                        <p>Довольных клиентов</p>
                       </div>
                     </div>
                   </div>
@@ -186,25 +193,23 @@
         <div class="col-xl-9">
           <div class="row justify-content-end pb-4">
             <div class="col-md-7 heading-section" data-aos="fade-up" data-aos-duration="1000">
-              <span class="subheading">Testimonial</span>
-              <h2 class="mb-3">Satisfied Clients</h2>
+              <span class="subheading">Отзывы</span>
+              <h2 class="mb-3">Довольные клиенты</h2>
             </div>
           </div>
           <div class="row justify-content-end">
             <div class="col-md-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-              <div class="carousel-testimony">
+              <div class="carousel-testimony-res-two">
                 <div class="item">
                   <div class="testimony-wrap">
                     <div class="icon d-flex align-items-center justify-content-center"><span class="ion ion-ios-quote">
                     </div>
                     <div class="text">
-                      <p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and
-                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
-                        coast of the Semantics, a large language ocean.</p>
+                      <p class="mb-4 msg">Отзыв</p>
                       <div class="d-flex align-items-center">
-                        <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                        <div class="user-img" style="background-image: url(../images/person_1.jpg)"></div>
                         <div class="pl-3 tx">
-                          <p class="name">Eugene</p>
+                          <p class="name">Евгений</p>
                           <span class="position">NFT Marketplace</span>
                         </div>
                       </div>
@@ -216,13 +221,11 @@
                     <div class="icon d-flex align-items-center justify-content-center"><span class="ion ion-ios-quote">
                     </div>
                     <div class="text">
-                      <p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and
-                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
-                        coast of the Semantics, a large language ocean.</p>
+                      <p class="mb-4 msg">Отзыв</p>
                       <div class="d-flex align-items-center">
-                        <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                        <div class="user-img" style="background-image: url(../images/person_2.jpg)"></div>
                         <div class="pl-3 tx">
-                          <p class="name">Paul Fuller</p>
+                          <p class="name">Пол Фуллер</p>
                           <span class="position">CRM-System</span>
                         </div>
                       </div>
@@ -234,13 +237,11 @@
                     <div class="icon d-flex align-items-center justify-content-center"><span class="ion ion-ios-quote">
                     </div>
                     <div class="text">
-                      <p class="mb-4 msg">Far far away, behind the word mountains, far from the countries Vokalia and
-                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
-                        coast of the Semantics, a large language ocean.</p>
+                      <p class="mb-4 msg">Отзыв</p>
                       <div class="d-flex align-items-center">
-                        <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                        <div class="user-img" style="background-image: url(../images/person_3.jpg)"></div>
                         <div class="pl-3 tx">
-                          <p class="name">Michael Flores</p>
+                          <p class="name">Майкл Флорес</p>
                           <span class="position">Pegasus Company</span>
                         </div>
                       </div>
@@ -276,17 +277,17 @@
         </div>
         <div class="col-md-6 col-lg-2">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Explore</h2>
+            <h2 class="ftco-heading-2">Навигация</h2>
             <ul class="list-unstyled">
-              <li><a href="/about.html"><span class="fa fa-chevron-right mr-2"></span>About Me</a></li>
-              <li><a href="/work.html"><span class="fa fa-chevron-right mr-2"></span>Work</a></li>
-              <li><a href="/contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+              <li><a href="/about.html"><span class="fa fa-chevron-right mr-2"></span>Обо мне</a></li>
+              <li><a href="/work.html"><span class="fa fa-chevron-right mr-2"></span>Работы</a></li>
+              <li><a href="/contact.html"><span class="fa fa-chevron-right mr-2"></span>Связаться</a></li>
             </ul>
           </div>
         </div>
         <div class="col-md-6 col-lg">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <h2 class="ftco-heading-2">Остались вопросы?</h2>
             <div class="block-23 mb-3">
               <ul>
                 <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San
@@ -303,15 +304,15 @@
   </footer>
 
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/tiny-slider.js"></script>
-  <script src="js/glightbox.min.js"></script>
-  <script src="js/rellax.min.js"></script>
-  <script src="js/aos.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/tiny-slider.js"></script>
+  <script src="../js/glightbox.min.js"></script>
+  <script src="../js/rellax.min.js"></script>
+  <script src="../js/aos.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/google-map.js"></script>
+  <script src="../js/jsabout.js"></script>
 
 </body>
 

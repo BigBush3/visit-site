@@ -3272,7 +3272,17 @@ textarea.form-control-lg {
   .nav-link.disabled {
     color: #6c757d;
     pointer-events: none;
-    cursor: default; }
+    cursor: default; }    
+
+.nav-select {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.nav-select:focus {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+}
 
 .nav-tabs {
   border-bottom: 1px solid #dee2e6; }

@@ -5,8 +5,7 @@
 	AOS.init({
 		ease: 'slide',
 		once: true
-	});
-
+	});  
 
 	var slider = function () {
 
@@ -16,7 +15,7 @@
 		let carouselSliderFour = document.querySelectorAll('.carousel-testimony-four');
 		let carouselSliderFive = document.querySelectorAll('.carousel-testimony-five');
 		let carouselSliderSix = document.querySelectorAll('.carousel-testimony-six');
-		let carouselSliderRes = document.querySelectorAll('.carousel-testimony-res');
+		let carouselSliderResOne = document.querySelectorAll('.carousel-testimony-res-one');
 
 		if (carouselSliderOne.length > 0) {
 
@@ -216,10 +215,10 @@
 
 		}
 
-		if (carouselSliderRes.length > 0) {
+		if (carouselSliderResOne.length > 0) {
 
 			var testimonySlider = tns({
-				container: '.carousel-testimony-res',
+				container: '.carousel-testimony-res-one',
 				items: 1,
 				mode: 'carousel',
 				autoplay: true,
@@ -252,7 +251,10 @@
 	}
 	slider();
 
-
+	var lang = document.getElementById('lang');
+	var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);;
+	lang.onchange = function(){ 
+	window.location = `${lang.options[lang.options.selectedIndex].value}${path}`}
 
 	var counter = function () {
 		function countUp(elem) {

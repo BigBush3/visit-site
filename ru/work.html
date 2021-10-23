@@ -13,12 +13,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/tiny-slider.css">
-  <link rel="stylesheet" href="css/glightbox.min.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/flaticon.css">
+  <link rel="stylesheet" href="../css/tiny-slider.css">
+  <link rel="stylesheet" href="../css/glightbox.min.css">
+  <link rel="stylesheet" href="../css/aos.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -31,13 +31,20 @@
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-bars"></span> Menu
+        <span class="fa fa-bars"></span> Меню
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="work.html">Work</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="work.html">Работы</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Обо мне</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Связаться</a></li>
+          <li class="nav-item">
+            <select class="nav-link nav-select" id="lang">
+              <option disabled>Выберите язык</option>
+              <option value="/en/">Английский</option>
+              <option value="/ru/" selected>Русский</option>
+            </select>
+          </li>
         </ul>
       </div>
     </div>
@@ -48,120 +55,120 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-11 heading-section mb-5" data-aos="fade-up" data-aos-duration="1000">
-          <h2 class="mb-4">Our Portfolio</h2>
-          <p><span class="subheading mr-2"><a href="index.html">Home</a></span> <span
-              class="subheading">Portfolio</span></p>
+          <h2 class="mb-4">Мои работы</h2>
+          <p><span class="subheading mr-2"><a href="index.html">Главная</a></span> <span
+              class="subheading">Работы</span></p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
-            <div class="img" style="background-image: url(images/work-1.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-1.jpg);"></div>
             <div class="text">
-              <span class="category">Branding, Printing</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Брендинг, Печать</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-            <div class="img" style="background-image: url(images/work-2.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-2.jpg);"></div>
             <div class="text">
-              <span class="category">Graphic Design</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Графический дизайн</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
-            <div class="img" style="background-image: url(images/work-3.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-3.jpg);"></div>
             <div class="text">
-              <span class="category">Web Development</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Веб-разработка</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-            <div class="img" style="background-image: url(images/work-4.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-4.jpg);"></div>
             <div class="text">
-              <span class="category">Web Design, Web Development</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Веб-дизайн, Веб-разработка</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
-            <div class="img" style="background-image: url(images/work-5.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-5.jpg);"></div>
             <div class="text">
-              <span class="category">Web Development</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Веб-разработка</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
-            <div class="img" style="background-image: url(images/work-6.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-6.jpg);"></div>
             <div class="text">
-              <span class="category">Web Design, Web Development</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Веб-дизайн, Веб-разработка</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-            <div class="img" style="background-image: url(images/work-7.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-7.jpg);"></div>
             <div class="text">
-              <span class="category">Web Design, Web Development</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Веб-дизайн, Веб-разработка</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
-            <div class="img" style="background-image: url(images/work-8.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-8.jpg);"></div>
             <div class="text">
-              <span class="category">Web Development</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Веб-разработка</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
-            <div class="img" style="background-image: url(images/work-9.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-9.jpg);"></div>
             <div class="text">
-              <span class="category">Web Design, Web Development</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Веб-дизайн, Веб-разработка</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-            <div class="img" style="background-image: url(images/work-10.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-10.jpg);"></div>
             <div class="text">
-              <span class="category">Web Design, Web Development</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Веб-дизайн, Веб-разработка</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
-            <div class="img" style="background-image: url(images/work-11.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-11.jpg);"></div>
             <div class="text">
-              <span class="category">Web Development</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Веб-разработка</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
-            <div class="img" style="background-image: url(images/work-12.jpg);"></div>
+            <div class="img" style="background-image: url(../images/work-12.jpg);"></div>
             <div class="text">
-              <span class="category">Web Design, Web Development</span>
-              <h3><a href="#">High Quality Design Concept</a></h3>
+              <span class="category">Веб-дизайн, Веб-разработка</span>
+              <h3><a href="#">Концепция дизайна высокого качества</a></h3>
             </div>
           </div>
         </div>
@@ -206,17 +213,17 @@
         </div>
         <div class="col-md-6 col-lg-2">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Explore</h2>
+            <h2 class="ftco-heading-2">Навигация</h2>
             <ul class="list-unstyled">
-              <li><a href="/about.html"><span class="fa fa-chevron-right mr-2"></span>About Me</a></li>
-              <li><a href="/work.html"><span class="fa fa-chevron-right mr-2"></span>Work</a></li>
-              <li><a href="/contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+              <li><a href="/about.html"><span class="fa fa-chevron-right mr-2"></span>Обо мне</a></li>
+              <li><a href="/work.html"><span class="fa fa-chevron-right mr-2"></span>Работы</a></li>
+              <li><a href="/contact.html"><span class="fa fa-chevron-right mr-2"></span>Связаться</a></li>
             </ul>
           </div>
         </div>
         <div class="col-md-6 col-lg">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <h2 class="ftco-heading-2">Остались вопросы?</h2>
             <div class="block-23 mb-3">
               <ul>
                 <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San
@@ -232,16 +239,15 @@
     </div>
   </footer>
 
-
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/tiny-slider.js"></script>
-  <script src="js/glightbox.min.js"></script>
-  <script src="js/rellax.min.js"></script>
-  <script src="js/aos.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/tiny-slider.js"></script>
+  <script src="../js/glightbox.min.js"></script>
+  <script src="../js/rellax.min.js"></script>
+  <script src="../js/aos.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/google-map.js"></script>
+  <script src="../js/main.js" type="text/javascript"></script>
 
 </body>
 
