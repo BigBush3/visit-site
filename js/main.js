@@ -255,7 +255,7 @@
 	var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1); 
 	console.log(window.location)
 	lang.onchange = function(){ 
-	window.location = `${lang.options[lang.options.selectedIndex].value}${path}`}
+	window.location = `visit-site${lang.options[lang.options.selectedIndex].value}${path}`}
 
 	var counter = function () {
 		function countUp(elem) {
