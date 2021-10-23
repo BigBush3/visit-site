@@ -5,7 +5,7 @@
 	AOS.init({
 		ease: 'slide',
 		once: true
-	});  
+	});
 
 	var slider = function () {
 
@@ -252,10 +252,12 @@
 	slider();
 
 	var lang = document.getElementById('lang');
-	var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1); 
+	var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
 	console.log(window.location)
-	lang.onchange = function(){ 
-	window.location = `visit-site${lang.options[lang.options.selectedIndex].value}${path}`}
+	lang.onchange = function () {
+		window.location.pathname = ''
+		window.location.pathname = `visit-site${lang.options[lang.options.selectedIndex].value}${path}`
+	}
 
 	var counter = function () {
 		function countUp(elem) {
