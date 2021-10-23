@@ -251,7 +251,7 @@
 	}
 	slider();
 
-	var lang = document.getElementById('lang');
+	var lang = document.getElementById('lang');	
 	var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
 	console.log(window.location)
 	lang.onchange = function () {
