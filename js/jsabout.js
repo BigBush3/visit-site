@@ -93,7 +93,7 @@
                     counter();
                 } else {
                     if (element.classList.contains('viewed')) {
-
+                        
                     }
                 }
             }
