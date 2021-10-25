@@ -303,9 +303,9 @@
 				if (!element.classList.contains('viewed')) {
 					element.classList.add('viewed');
 					counter();
-				} else {
+				} else { 
 					if (element.classList.contains('viewed')) {
-
+						
 					}
 				}
 			}
