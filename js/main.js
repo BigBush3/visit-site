@@ -251,13 +251,6 @@
 	}
 	slider();
 
-	var lang = document.getElementById('lang');	
-	var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
-	lang.onchange = function () {
-		window.location.pathname = ''
-		window.location.pathname = `visit-site${lang.options[lang.options.selectedIndex].value}${path}`
-	}
-
 	var counter = function () {
 		function countUp(elem) {
 			var current = elem.innerHTML;
@@ -315,7 +308,6 @@
 
 	init();
 	checkPosition()
-
 
 	const lightbox = GLightbox({
 		touchNavigation: true,
