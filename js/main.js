@@ -10,11 +10,6 @@
 	var slider = function () {
 
 		let carouselSliderOne = document.querySelectorAll('.carousel-testimony-one');
-		let carouselSliderTwo = document.querySelectorAll('.carousel-testimony-two');
-		let carouselSliderThree = document.querySelectorAll('.carousel-testimony-three');
-		let carouselSliderFour = document.querySelectorAll('.carousel-testimony-four');
-		let carouselSliderFive = document.querySelectorAll('.carousel-testimony-five');
-		let carouselSliderSix = document.querySelectorAll('.carousel-testimony-six');
 		let carouselSliderResOne = document.querySelectorAll('.carousel-testimony-res-one');
 
 		if (carouselSliderOne.length > 0) {
