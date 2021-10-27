@@ -9259,7 +9259,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
-/* 
+
 .tns-controlstns1 {
   position: absolute;
   z-index: 1;
@@ -9281,41 +9281,18 @@ hr {
   justify-content: space-between;
   align-items: center; 
 }
-*/
 .tns-controlstns3 {
   position: absolute;
   z-index: 1;
   height: 100%;
   max-height: 550px;
-  width: 100%;
+  width: 355px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .tns-controlstns4 {
-  position: absolute;
-  z-index: 1;
-  height: 100%;
-  max-height: 550px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.tns-controlstns5 {
-  position: absolute;
-  z-index: 1;
-  height: 100%;
-  max-height: 550px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.tns-controlstns6 {
   position: absolute;
   z-index: 1;
   height: 100%;

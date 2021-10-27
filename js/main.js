@@ -10,12 +10,114 @@
 	var slider = function () {
 
 		let carouselSliderOne = document.querySelectorAll('.carousel-testimony-one');
+		let carouselSliderTwo = document.querySelectorAll('.carousel-testimony-two');
+		let carouselSliderThree = document.querySelectorAll('.carousel-testimony-three');
+		let carouselSliderFour = document.querySelectorAll('.carousel-testimony-four');
 		let carouselSliderResOne = document.querySelectorAll('.carousel-testimony-res-one');
 
 		if (carouselSliderOne.length > 0) {
 
 			var testimonySlider = tns({
 				container: '.carousel-testimony-one',
+				items: 1,
+				mode: 'carousel',
+				autoplay: true,
+				animateIn: 'tns-fadeIn',
+				animateOut: 'tns-fadeOut',
+				speed: 700,
+				nav: false,
+				gutter: 20,
+				controls: true,
+				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1,
+						gutter: 0
+					},
+					600: {
+						items: 1,
+						gutter: 20
+					},
+					1000: {
+						items: 1,
+						gutter: 20
+					}
+				}
+			});
+
+		}
+
+		if (carouselSliderTwo.length > 0) {
+
+			var testimonySlider = tns({
+				container: '.carousel-testimony-two',
+				items: 1,
+				mode: 'carousel',
+				autoplay: true,
+				animateIn: 'tns-fadeIn',
+				animateOut: 'tns-fadeOut',
+				speed: 700,
+				nav: false,
+				gutter: 20,
+				controls: true,
+				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1,
+						gutter: 0
+					},
+					600: {
+						items: 1,
+						gutter: 20
+					},
+					1000: {
+						items: 1,
+						gutter: 20
+					}
+				}
+			});
+
+		}
+
+		if (carouselSliderThree.length > 0) {
+
+			var testimonySlider = tns({
+				container: '.carousel-testimony-three',
+				items: 1,
+				mode: 'carousel',
+				autoplay: true,
+				animateIn: 'tns-fadeIn',
+				animateOut: 'tns-fadeOut',
+				speed: 700,
+				nav: false,
+				gutter: 20,
+				controls: true,
+				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1,
+						gutter: 0
+					},
+					600: {
+						items: 1,
+						gutter: 20
+					},
+					1000: {
+						items: 1,
+						gutter: 20
+					}
+				}
+			});
+
+		}
+
+		if (carouselSliderFour.length > 0) {
+
+			var testimonySlider = tns({
+				container: '.carousel-testimony-four',
 				items: 1,
 				mode: 'carousel',
 				autoplay: true,
@@ -60,6 +162,20 @@
 				controls: true,
 				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
 				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1,
+						gutter: 0
+					},
+					600: {
+						items: 1,
+						gutter: 20
+					},
+					1000: {
+						items: 1,
+						gutter: 20
+					}
+				}
 			});
 
 		}
