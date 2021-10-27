@@ -60,20 +60,6 @@
 				controls: true,
 				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
 				autoplayButtonOutput: false,
-				responsive: {
-					0: {
-						items: 1,
-						gutter: 0
-					},
-					600: {
-						items: 1,
-						gutter: 20
-					},
-					1000: {
-						items: 1,
-						gutter: 20
-					}
-				}
 			});
 
 		}
