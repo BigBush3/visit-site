@@ -28,7 +28,7 @@
 				nav: false,
 				gutter: 20,
 				controls: true,
-				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				controlsText: ["<span class='iconify' data-icon='ion:chevron-back-outline'></span>", "<span class='iconify' data-icon='ion:chevron-forward-outline'></span>"],
 				autoplayButtonOutput: false,
 				responsive: {
 					0: {
@@ -61,7 +61,7 @@
 				nav: false,
 				gutter: 20,
 				controls: true,
-				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				controlsText: ["<span class='iconify' data-icon='ion:chevron-back-outline'></span>", "<span class='iconify' data-icon='ion:chevron-forward-outline'></span>"],
 				autoplayButtonOutput: false,
 				responsive: {
 					0: {
@@ -94,7 +94,7 @@
 				nav: false,
 				gutter: 20,
 				controls: true,
-				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				controlsText: ["<span class='iconify' data-icon='ion:chevron-back-outline'></span>", "<span class='iconify' data-icon='ion:chevron-forward-outline'></span>"],
 				autoplayButtonOutput: false,
 				responsive: {
 					0: {
@@ -127,7 +127,7 @@
 				nav: false,
 				gutter: 20,
 				controls: true,
-				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				controlsText: ["<span class='iconify' data-icon='ion:chevron-back-outline'></span>", "<span class='iconify' data-icon='ion:chevron-forward-outline'></span>"],
 				autoplayButtonOutput: false,
 				responsive: {
 					0: {
@@ -144,7 +144,6 @@
 					}
 				}
 			});
-
 		}
 
 		if (carouselSliderResOne.length > 0) {
@@ -160,7 +159,7 @@
 				nav: false,
 				gutter: 20,
 				controls: true,
-				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				controlsText: ["<span class='iconify' data-icon='ion:chevron-back-outline'></span>", "<span class='iconify' data-icon='ion:chevron-forward-outline'></span>"],
 				autoplayButtonOutput: false,
 				responsive: {
 					0: {
