@@ -9276,6 +9276,18 @@ button:hover {
   height: 38px;
 }
 
+.ion-ios-arrow-round-back {
+  padding: 10px;
+  color: #aaa;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ion-ios-arrow-round-forward {
+  padding: 10px;
+  color: #aaa;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .iconify {
   max-height: 38px;
   max-width: 38px;
