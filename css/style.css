@@ -493,10 +493,6 @@ progress {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     max-width: 1320px; } }
 
-/* .wrapper {
-  overflow: hidden;
-}     */
-
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -8964,7 +8960,7 @@ textarea.form-control {
   .work-featured:hover .icon {
     opacity: 1; }
   .work-featured:hover:after {
-    opacity: .3; }
+    opacity: 0.3; }
 
 .work-wrap {
   widows: 100%;
