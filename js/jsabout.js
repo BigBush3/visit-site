@@ -47,7 +47,12 @@
     }
     slider();
 
-    document.getElementById("res").className = "tns-controlstns7";
+    var lang = document.getElementById('lang');
+    var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+    lang.onchange = function () {
+        window.location.pathname = ''
+        window.location.pathname = `visit-site${lang.options[lang.options.selectedIndex].value}${path}`
+    }
 
     var counter = function () {
         function countUp(elem) {

@@ -9279,11 +9279,11 @@ button {
 }
 
 .swiper-button-prev:hover {
-  color: white;
+  color: var(--bs-gray);
 }
 
 .swiper-button-next:hover {
-  color: white;
+  color: var(--bs-gray);
 }
 
 .testimony-section {
