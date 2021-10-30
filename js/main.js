@@ -1,3 +1,5 @@
+import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+
 (function () {
 
 	"use strict";
@@ -7,149 +9,23 @@
 		once: true
 	});
 
+	const swiper = new Swiper('.swiper', {
+		direction: 'vertical',
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+
 	var slider = function () {
 
-		let carouselSliderOne = document.querySelectorAll('.carousel-testimony-one');
-		let carouselSliderTwo = document.querySelectorAll('.carousel-testimony-two');
-		let carouselSliderThree = document.querySelectorAll('.carousel-testimony-three');
-		let carouselSliderFour = document.querySelectorAll('.carousel-testimony-four');
-		let carouselSliderResOne = document.querySelectorAll('.carousel-testimony-res-one');
+		var carouselSlider = document.querySelectorAll('.carousel-testimony');
 
-		if (carouselSliderOne.length > 0) {
+		if (carouselSlider.length > 0) {
 
 			var testimonySlider = tns({
-				container: '.carousel-testimony-one',
-				items: 1,
-				mode: 'carousel',
-				autoplay: true,
-				animateIn: 'tns-fadeIn',
-				animateOut: 'tns-fadeOut',
-				speed: 700,
-				nav: false,
-				gutter: 20,
-				controls: true,
-				controlsText: ["<span class='iconify' data-icon='ion:chevron-back-outline'></span>", "<span class='iconify' data-icon='ion:chevron-forward-outline'></span>"],
-				autoplayButtonOutput: false,
-				responsive: {
-					0: {
-						items: 1,
-						gutter: 0
-					},
-					600: {
-						items: 1,
-						gutter: 20
-					},
-					1000: {
-						items: 1,
-						gutter: 20
-					}
-				}
-			});
-
-		}
-
-		if (carouselSliderTwo.length > 0) {
-
-			var testimonySlider = tns({
-				container: '.carousel-testimony-two',
-				items: 1,
-				mode: 'carousel',
-				autoplay: true,
-				animateIn: 'tns-fadeIn',
-				animateOut: 'tns-fadeOut',
-				speed: 700,
-				nav: false,
-				gutter: 20,
-				controls: true,
-				controlsText: ["<span class='iconify' data-icon='ion:chevron-back-outline'></span>", "<span class='iconify' data-icon='ion:chevron-forward-outline'></span>"],
-				autoplayButtonOutput: false,
-				responsive: {
-					0: {
-						items: 1,
-						gutter: 0
-					},
-					600: {
-						items: 1,
-						gutter: 20
-					},
-					1000: {
-						items: 1,
-						gutter: 20
-					}
-				}
-			});
-
-		}
-
-		if (carouselSliderThree.length > 0) {
-
-			var testimonySlider = tns({
-				container: '.carousel-testimony-three',
-				items: 1,
-				mode: 'carousel',
-				autoplay: true,
-				animateIn: 'tns-fadeIn',
-				animateOut: 'tns-fadeOut',
-				speed: 700,
-				nav: false,
-				gutter: 20,
-				controls: true,
-				controlsText: ["<span class='iconify' data-icon='ion:chevron-back-outline'></span>", "<span class='iconify' data-icon='ion:chevron-forward-outline'></span>"],
-				autoplayButtonOutput: false,
-				responsive: {
-					0: {
-						items: 1,
-						gutter: 0
-					},
-					600: {
-						items: 1,
-						gutter: 20
-					},
-					1000: {
-						items: 1,
-						gutter: 20
-					}
-				}
-			});
-
-		}
-
-		if (carouselSliderFour.length > 0) {
-
-			var testimonySlider = tns({
-				container: '.carousel-testimony-four',
-				items: 1,
-				mode: 'carousel',
-				autoplay: true,
-				animateIn: 'tns-fadeIn',
-				animateOut: 'tns-fadeOut',
-				speed: 700,
-				nav: false,
-				gutter: 20,
-				controls: true,
-				controlsText: ["<span class='iconify' data-icon='ion:chevron-back-outline'></span>", "<span class='iconify' data-icon='ion:chevron-forward-outline'></span>"],
-				autoplayButtonOutput: false,
-				responsive: {
-					0: {
-						items: 1,
-						gutter: 0
-					},
-					600: {
-						items: 1,
-						gutter: 20
-					},
-					1000: {
-						items: 1,
-						gutter: 20
-					}
-				}
-			});
-		}
-
-		if (carouselSliderResOne.length > 0) {
-
-			var testimonySlider = tns({
-				container: '.carousel-testimony-res-one',
+				container: '.carousel-testimony',
 				items: 1,
 				mode: 'carousel',
 				autoplay: true,
@@ -176,13 +52,11 @@
 					}
 				}
 			});
-
 		}
-
 	}
 	slider();
 
-	var lang = document.getElementById('lang');	
+	var lang = document.getElementById('lang');
 	var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
 	console.log(window.location)
 	lang.onchange = function () {
@@ -249,7 +123,7 @@
 	checkPosition()
 
 
-	const lightbox = GLightbox({
+	const lightbox = lightbox({
 		touchNavigation: true,
 		loop: true,
 		autoplayVideos: true
