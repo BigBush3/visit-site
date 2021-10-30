@@ -443,6 +443,15 @@
   <script src="../js/main.js" type="text/javascript" type="module"></script>
   <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script type="module">
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+  </script>
 </body>
 
 </html>
