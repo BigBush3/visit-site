@@ -9,7 +9,7 @@
 
 	var slider = function () {
 
-		var carouselSlider = document.querySelectorAll('.carousel-testimony');
+		var carouselSlider = document.querySelectorAll('.carousel-testimony-res-one');
 
 		if (carouselSlider.length > 0) {
 
