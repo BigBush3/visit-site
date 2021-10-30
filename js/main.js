@@ -9,7 +9,7 @@
 
 	var slider = function () {
 
-		var carouselSlider = document.querySelectorAll('.carousel-testimony-res-one');
+		var carouselSlider = document.querySelectorAll('.carousel-testimony');
 
 		if (carouselSlider.length > 0) {
 
@@ -24,7 +24,7 @@
 				nav: false,
 				gutter: 20,
 				controls: true,
-				controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+				controlsText: ["<span class='iconify' data-icon='ion:chevron-back-outline'></span>", "<span class='iconify' data-icon='ion:chevron-forward-outline'></span>"],
 				autoplayButtonOutput: false,
 				responsive: {
 					0: {
@@ -47,7 +47,6 @@
 
 	var lang = document.getElementById('lang');
 	var path = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
-	console.log(window.location)
 	lang.onchange = function () {
 		window.location.pathname = ''
 		window.location.pathname = `visit-site${lang.options[lang.options.selectedIndex].value}${path}`
@@ -57,9 +56,7 @@
 		function countUp(elem) {
 			var current = elem.innerHTML;
 
-
 			var timeIntervalBeforeIncrement = 2000 / elem.getAttribute("data-count")
-
 
 			var interval = setInterval(increase, timeIntervalBeforeIncrement);
 
@@ -71,7 +68,6 @@
 			}
 
 		}
-
 		var span = document.querySelectorAll("[id^='count']");
 
 		var i = 0;
@@ -111,29 +107,10 @@
 	init();
 	checkPosition()
 
-
-	const lightbox = lightbox({
+	const lightbox = GLightbox({
 		touchNavigation: true,
 		loop: true,
 		autoplayVideos: true
 	});
-
-	//SCROLL
-	const links = document.querySelectorAll(".btn-custom");
-
-	for (const link of links) {
-		link.addEventListener("click", clickHandler);
-	}
-
-	function clickHandler(e) {
-		const href = this.getAttribute("href");
-		const offsetTop = document.querySelector(href).offsetTop;
-
-		scroll({
-			top: offsetTop,
-			behavior: "smooth"
-		});
-	}
-
 })()
 

@@ -9,12 +9,12 @@
 
     var slider = function () {
 
-        let carouselSliderResTwo = document.querySelectorAll('.carousel-testimony-res-two');
+        let carouselSlider = document.querySelectorAll('.carousel-testimony');
 
-        if (carouselSliderResTwo.length > 0) {
+        if (carouselSlider.length > 0) {
 
             var testimonySlider = tns({
-                container: '.carousel-testimony-res-two',
+                container: '.carousel-testimony',
                 items: 1,
                 mode: 'carousel',
                 autoplay: true,
@@ -24,7 +24,7 @@
                 nav: false,
                 gutter: 20,
                 controls: true,
-                controlsText: ["<span class='ion-ios-arrow-round-back'></span>", "<span class='ion-ios-arrow-round-forward'></span>"],
+                controlsText: ["<span class='iconify' data-icon='ion:chevron-back-outline'></span>", "<span class='iconify' data-icon='ion:chevron-forward-outline'></span>"],
                 autoplayButtonOutput: false,
                 responsive: {
                     0: {
